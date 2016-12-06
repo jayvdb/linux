@@ -4,4 +4,4 @@ script:
  - touch .gitignore
  - >
    docker run --volume=$(pwd):/app --workdir=/app coala/base:pre /bin/bash -c
-   "coala-quickstart --ci; coala --ci"
+   "coala-quickstart --ci; coala -V --ci"
